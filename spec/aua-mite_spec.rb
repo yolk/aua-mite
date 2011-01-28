@@ -38,6 +38,10 @@ describe "Mite Extension" do
       { :type => :ApiClient, :name => :GrandTotal, :version => "1.6.4", :os_name => :MacOSX, :os_version => "10.5.8", :platform => :Macintosh },
     "centralstationcrm" =>
       { :type => :ApiClient, :name => :centralstationcrm, :version => nil, :os_name => nil, :os_version => nil, :platform => nil },
+    "Mite-on-rails/0.0.1" =>
+      { :type => :ApiClient, :name => :"Mite-on-rails", :version => "0.0.1", :os_name => nil, :os_version => nil, :platform => nil },
+    "git2mite/0.0.1" =>
+      { :type => :ApiClient, :name => :git2mite, :version => "0.0.1", :os_name => nil, :os_version => nil, :platform => nil },
       
     # mite.go
     "mite.go/1.0 CFNetwork/459 Darwin/10.0.0d3" =>
