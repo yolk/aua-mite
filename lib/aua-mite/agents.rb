@@ -3,4 +3,4 @@ Dir["#{File.dirname(__FILE__)}/agents/*.rb"].each do |agent|
 end
 
 Aua::Agents.default << Aua::Agents::Fuerst << Aua::Agents::MiteGo <<
-                       Aua::Agents::StandardMiteClient << Aua::Agents::AllMite
+                       Aua::Agents::StandardMiteClient << Aua::Agents::AllMite << Aua::Agents::Anytime
