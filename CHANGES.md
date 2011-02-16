@@ -1,6 +1,10 @@
 ### dev
 
-[full changelog](http://github.com/yolk/aua-mite/compare/v0.0.3...master)
+[full changelog](http://github.com/yolk/aua-mite/compare/v0.0.4...master)
+
+### 0.0.4 / 2011-02-16
+
+[full changelog](http://github.com/yolk/aua-mite/compare/v0.0.3...v0.0.4)
 
 * Added TimeLog support
 
