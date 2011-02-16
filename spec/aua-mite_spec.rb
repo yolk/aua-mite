@@ -42,6 +42,16 @@ describe "Mite Extension" do
       { :type => :ApiClient, :name => :"Mite-on-rails", :version => "0.0.1", :os_name => nil, :os_version => nil, :platform => nil },
     "git2mite/0.0.1" =>
       { :type => :ApiClient, :name => :git2mite, :version => "0.0.1", :os_name => nil, :os_version => nil, :platform => nil },
+    "mite.air/0.93 (Windows Vista)" =>
+      { :type => :ApiClient, :name => :"mite.air", :version => "0.93", :os_name => :Windows, :os_version => "V", :platform => :Windows },
+    "mite.air/0.93 (Mac OS 10.5.8)" =>
+      { :type => :ApiClient, :name => :"mite.air", :version => "0.93", :os_name => nil, :os_version => nil, :platform => nil },
+    "mite.enterprise/0.1 (simple)" =>
+      { :type => :ApiClient, :name => :"mite.enterprise", :version => "0.1", :os_name => nil, :os_version => nil, :platform => nil },
+    "mite.mobile/1.2 CFNetwork/485.12.7 Darwin/10.4.0" =>
+      { :type => :ApiClient, :name => :"mite.mobile", :version => "1.2", :os_name => :MacOSX, :os_version => "10.6.4", :platform => :Macintosh },
+    "mite.net - connector/1.2.1.0 (Microsoft Windows NT 6.1.7600.0)" =>
+      { :type => :ApiClient, :name => :"mite.net", :version => "1.2.1.0", :os_name => :Windows, :os_version => "NT 6.1.7600.0", :platform => :Windows },
       
     # mite.go
     "mite.go/1.0 CFNetwork/459 Darwin/10.0.0d3" =>
