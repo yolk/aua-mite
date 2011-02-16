@@ -52,6 +52,8 @@ describe "Mite Extension" do
       { :type => :ApiClient, :name => :"mite.mobile", :version => "1.2", :os_name => :MacOSX, :os_version => "10.6.4", :platform => :Macintosh },
     "mite.net - connector/1.2.1.0 (Microsoft Windows NT 6.1.7600.0)" =>
       { :type => :ApiClient, :name => :"mite.net", :version => "1.2.1.0", :os_name => :Windows, :os_version => "NT 6.1.7600.0", :platform => :Windows },
+    "TimeLog/4.5.7 CFNetwork/454.11.5 Darwin/10.6.0 (i386) (MacBookPro6%2C1)" =>
+      { :type => :ApiClient, :name => :TimeLog, :version => "4.5.7", :os_name => :MacOSX, :os_version => "10.6.6", :platform => :Macintosh },
       
     # mite.go
     "mite.go/1.0 CFNetwork/459 Darwin/10.0.0d3" =>

@@ -1,8 +1,9 @@
 module Aua::Agents::Fuerst
   
+  PATTERN = /^(DynaMite|GrandTotal|TimeLog)/
+  
   def self.extend?(agent)
-    agent.app == "DynaMite" || agent.app == "GrandTotal" || 
-    agent.app =~ /^DynaMite/ || agent.app =~ /^GrandTotal/ 
+    agent.app =~ PATTERN
   end
   
   def type
@@ -10,13 +11,13 @@ module Aua::Agents::Fuerst
   end
   
   def name
-    @name ||= app =~ /^GrandTotal/ ? :GrandTotal : :DynaMite
+    @name ||= app.match(PATTERN)[1].to_sym
   end
   
   def version
     @version ||= begin
-      return versions.first if app == "DynaMite" || app == "GrandTotal"
-      app.sub(/^DynaMite|GrandTotal/, "")
+      return versions.first if app == "DynaMite" || app == "GrandTotal" || app == "TimeLog"
+      app.sub(PATTERN, "")
     end
   end
 end
