@@ -1,13 +1,13 @@
 PATH
   remote: .
   specs:
-    aua-mite (0.0.3)
+    aua-mite (0.0.4)
       aua (>= 0.1.0)
 
 GEM
   remote: http://rubygems.org/
   specs:
-    aua (0.2.0)
+    aua (0.2.1)
     configuration (1.2.0)
     diff-lcs (1.1.2)
     growl (1.0.3)
