@@ -1,6 +1,6 @@
 module Aua::Agents::StandardMiteClient
   
-  KNOWN_CLIENTS = %w(git2mite Mite-on-rails mite-rb jmite Redmine2mite Mantis2mite Billomat hearttp centralstationcrm)
+  KNOWN_CLIENTS = %w(git2mite Mite-on-rails mite-rb jmite Redmine2mite Mantis2mite Billomat hearttp centralstationcrm mighty-mite-statistics)
   MITE_STANDARD = /^mite\.([a-z]+)/
   
   def self.extend?(agent)

@@ -77,7 +77,11 @@ describe "Mite Extension" do
     "Eon/316 CFNetwork/520.3.2 Darwin/11.3.0 (x86_64) (MacBookPro4%2C1)" =>
       { :type => :ApiClient, :name => :"Eon", :version => "316", :os_name => :Darwin, :os_version => "11.3.0", :platform => :Darwin},
     "Eon/331 CFNetwork/520.3.2 Darwin/11.3.0 (x86_64) (MacBookPro8%2C2)" =>
-      { :type => :ApiClient, :name => :"Eon", :version => "331", :os_name => :Darwin, :os_version => "11.3.0", :platform => :Darwin}
+      { :type => :ApiClient, :name => :"Eon", :version => "331", :os_name => :Darwin, :os_version => "11.3.0", :platform => :Darwin},
+      
+    # mighty-mite-statistics
+    "mighty-mite-statistics/0.0.1" =>
+      { :type => :ApiClient, :name => :"mighty-mite-statistics", :version => "0.0.1", :os_name => nil, :os_version => nil, :platform => nil}
   }
   
   EXAMPLES_MITE.each do |string, values|
