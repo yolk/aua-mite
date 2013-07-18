@@ -8,6 +8,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Sebastian Munz"]
   s.email       = ["sebastian@yo.lk"]
+  s.license     = 'MIT'
   s.homepage    = "https://github.com/yolk/aua-mite"
   s.summary     = %q{Extension for aua to recognize custom mite api clients by there user agent string.}
   s.description = %q{Extension for aua (https://github.com/yolk/aua) to recognize custom mite api clients by there user agent string. Not very useful for anyone outside of mite/yolk. But maybe handy as a example of extending aua.}
