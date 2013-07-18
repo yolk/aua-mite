@@ -18,9 +18,9 @@ Gem::Specification.new do |s|
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
-  
-  s.add_dependency 'aua',       '>= 0.1.0'
-  
+
+  s.add_dependency 'aua',       '>= 0.2'
+
   s.add_development_dependency 'rspec',       '>= 2.4.0'
   s.add_development_dependency 'guard-rspec', '>=0.1.9'
   s.add_development_dependency 'growl',       '>=1.0.3'
