@@ -6,6 +6,7 @@
 * Anytime fixes
 * Misc mobile mite clients
 * Misc mite clients
+* Use aua original specs after extending parsing
 
 ### 0.0.5 / 2012-03-29
 

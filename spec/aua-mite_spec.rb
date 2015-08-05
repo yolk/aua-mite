@@ -179,3 +179,8 @@ describe "Mite Extension" do
 
 end
 
+aua_specs_path = File.expand_path("../../../aua/spec/aua_spec.rb", __FILE__)
+if File.exists?(aua_specs_path)
+  require aua_specs_path
+end
+
