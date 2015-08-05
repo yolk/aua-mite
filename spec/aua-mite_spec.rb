@@ -144,15 +144,15 @@ describe "Mite Extension" do
       { :type => :ApiClient, :name => :my_app_name, :version => nil, :os_name => nil, :os_version => nil, :platform => nil},
     "mite_summary" =>
       { :type => :ApiClient, :name => :mite_summary, :version => nil, :os_name => nil, :os_version => nil, :platform => nil},
-    "Fire2mite/v0.9 (nils.waldherr@filemakergarage.com)" =>
+    "Fire2mite/v0.9 (user@email.com)" =>
       { :type => :ApiClient, :name => :Fire2mite, :version => "v0.9", :os_name => nil, :os_version => nil, :platform => nil},
-    "git2mitev0.1.0(Ondrej Brinkel <info@anzui.de>)" =>
+    "git2mitev0.1.0(Ondrej Brinkel <user@email.com>)" =>
       { :type => :ApiClient, :name => :git2mite, :version => "0.1.0", :os_name => nil, :os_version => nil, :platform => nil},
-    "gitlab2mitev0.0.1(Ondrej Brinkel <info@anzui.de>)" =>
+    "gitlab2mitev0.0.1(Ondrej Brinkel <user@email.com>)" =>
       { :type => :ApiClient, :name => :git2mite, :version => "0.0.1", :os_name => nil, :os_version => nil, :platform => nil},
-    "gitlab2mitev0.0.4(Ondrej Brinkel <info@anzui.de>)" =>
+    "gitlab2mitev0.0.4(Ondrej Brinkel <user@email.com>)" =>
       { :type => :ApiClient, :name => :git2mite, :version => "0.0.4", :os_name => nil, :os_version => nil, :platform => nil},
-    "jira-mite-0.1 (werding.parkside@gmail.com)" =>
+    "jira-mite-0.1 (user@email.com)" =>
       { :type => :ApiClient, :name => :jiramite, :version => "0.1", :os_name => nil, :os_version => nil, :platform => nil},
     "jira-mite" =>
       { :type => :ApiClient, :name => :jiramite, :version => nil, :os_name => nil, :os_version => nil, :platform => nil},
@@ -174,9 +174,9 @@ describe "Mite Extension" do
       { :type => :ApiClient, :name => :"mite-cli", :version => nil, :os_name => nil, :os_version => nil, :platform => nil},
     "MiteBoard 1.0 rv:1 (Macintosh; Mac OS X 10.6.7; de_DE)" =>
       { :type => :ApiClient, :name => :MiteBoard, :version => nil, :os_name => nil, :os_version => nil, :platform => nil},
-    "mitecommander/0.1.0 njh@njh.io" =>
+    "mitecommander/0.1.0 user@email.com" =>
       { :type => :ApiClient, :name => :mitecommander, :version => "0.1.0", :os_name => nil, :os_version => nil, :platform => nil},
-    "mite-compiler/v1.0 (mario.colombo@webrepublic.ch)" =>
+    "mite-compiler/v1.0 (user@email.com)" =>
       { :type => :ApiClient, :name => :"mite-compiler", :version => "v1.0", :os_name => nil, :os_version => nil, :platform => nil},
     "mite-exporter/v1.0" =>
       { :type => :ApiClient, :name => :"mite-exporter", :version => "v1.0", :os_name => nil, :os_version => nil, :platform => nil},
@@ -184,11 +184,11 @@ describe "Mite Extension" do
       { :type => :ApiClient, :name => :"mite-export", :version => "v1.0", :os_name => nil, :os_version => nil, :platform => nil},
     "mite-faxport <0.0.1>" =>
       { :type => :ApiClient, :name => :"mite-faxport", :version => nil, :os_name => nil, :os_version => nil, :platform => nil},
-    "MiteFM/v0.9 (nils.waldherr@filemakergarage.com)" =>
+    "MiteFM/v0.9 (user@email.com)" =>
       { :type => :ApiClient, :name => :"MiteFM", :version => "v0.9", :os_name => nil, :os_version => nil, :platform => nil},
     "mite-import (stephan.poetschner@slice-dice.de)" =>
       { :type => :ApiClient, :name => :"mite-import", :version => nil, :os_name => nil, :os_version => nil, :platform => nil},
-    "mite-info/v1.0.0 (mail@sebbo.net)" =>
+    "mite-info/v1.0.0 (user@email.com)" =>
       { :type => :ApiClient, :name => :"mite-info", :version => "v1.0.0", :os_name => nil, :os_version => nil, :platform => nil},
     "mite_invoice/0.0.1" =>
       { :type => :ApiClient, :name => :"mite-invoice", :version => "0.0.1", :os_name => nil, :os_version => nil, :platform => nil},
@@ -198,11 +198,11 @@ describe "Mite Extension" do
       { :type => :ApiClient, :name => :"Mitelicious", :version => nil, :os_name => nil, :os_version => nil, :platform => nil},
     "MiteliciousToday/com.kreait.Mitelicious.MiteliciousToday (1; OS Version 8.2 (Build 12D508))" =>
       { :type => :ApiClient, :name => :"MiteliciousToday", :version => nil, :os_name => nil, :os_version => nil, :platform => nil},
-    "mitematemarser/0.2.1 (njh@njh.io)" =>
+    "mitematemarser/0.2.1 (user@email.com)" =>
       { :type => :ApiClient, :name => :"mitematemarser", :version => "0.2.1", :os_name => nil, :os_version => nil, :platform => nil},
     "mitemigrate/0.0.1" =>
       { :type => :ApiClient, :name => :"mitemigrate", :version => "0.0.1", :os_name => nil, :os_version => nil, :platform => nil},
-    "mite-ngn/v1.0 (marcus@padovani.de)" =>
+    "mite-ngn/v1.0 (user@email.com)" =>
       { :type => :ApiClient, :name => :"mite-ngn", :version => "v1.0", :os_name => nil, :os_version => nil, :platform => nil},
     "miteNX" =>
       { :type => :ApiClient, :name => :miteNX, :version => nil, :os_name => nil, :os_version => nil, :platform => nil},
@@ -220,7 +220,7 @@ describe "Mite Extension" do
       { :type => :ApiClient, :name => :"mite-reader", :version => "0.1", :os_name => nil, :os_version => nil, :platform => nil},
     "mite-rest-test" =>
       { :type => :ApiClient, :name => :"mite-rest-test", :version => nil, :os_name => nil, :os_version => nil, :platform => nil},
-    "mite-salary/v1.0 (mail@sebbo.net)" =>
+    "mite-salary/v1.0 (user@email.com)" =>
       { :type => :ApiClient, :name => :"mite-salary", :version => "v1.0", :os_name => nil, :os_version => nil, :platform => nil},
     "mite+scopevisio/0.1;mite-rb/0.5.3" =>
       { :type => :ApiClient, :name => :"mite+scopevisio", :version => "0.1", :os_name => nil, :os_version => nil, :platform => nil},
@@ -237,7 +237,7 @@ describe "Mite Extension" do
       { :type => :ApiClient, :name => :"mitetracking", :version => "v2.2.3", :os_name => nil, :os_version => nil, :platform => nil},
     "mite/v1.2.3" =>
       { :type => :ApiClient, :name => :"mite", :version => "v1.2.3", :os_name => nil, :os_version => nil, :platform => nil},
-    "mitevaluator (info@datenpark.ch)" =>
+    "mitevaluator (user@email.com)" =>
       { :type => :ApiClient, :name => :"mitevaluator", :version => nil, :os_name => nil, :os_version => nil, :platform => nil},
     "MiteYourMite" =>
       { :type => :ApiClient, :name => :"MiteYourMite", :version => nil, :os_name => nil, :os_version => nil, :platform => nil},
