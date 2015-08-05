@@ -2,6 +2,8 @@
 
 [full changelog](http://github.com/yolk/aua-mite/compare/v0.0.5...master)
 
+* Added Clockson detection
+
 ### 0.0.5 / 2012-03-29
 
 [full changelog](http://github.com/yolk/aua-mite/compare/v0.0.4...v0.0.5)

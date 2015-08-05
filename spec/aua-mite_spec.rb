@@ -87,6 +87,26 @@ describe "Mite Extension" do
     "MightyMite 2.3.2 (Macintosh; Mac OS X 10.8.4; de_AT)" =>
       { :type => :ApiClient, :name => :MightyMite, :version => "2.3.2", :os_name => nil, :os_version => nil, :platform => nil},
 
+    # Clockson
+    "Clockson/1.01 (iPhone; iOS 7.1.1; Scale/2.00)" =>
+      { :type => :ApiClient, :name => :Clockson, :version => "1.01", :os_name => :iOS, :os_version => "7.1.1", :platform => :iPhone },
+    "Clockson/1.01 (iPhone; iOS 7.1.1; Scale/2.00),clockson/v1.0 (http://ninjaconcept.com/clockson)" =>
+      { :type => :ApiClient, :name => :Clockson, :version => "1.01", :os_name => :iOS, :os_version => "7.1.1", :platform => :iPhone },
+    "Clockson/1.0 CFNetwork/672.0.8 Darwin/14.0.0" =>
+      { :type => :ApiClient, :name => :Clockson, :version => "1.0", :os_name => :Darwin, :os_version => "14.0.0", :platform => :Darwin },
+    "Clockson/1.0 (iPad; iOS 7.1.1; Scale/2.00)" =>
+      { :type => :ApiClient, :name => :Clockson, :version => "1.0", :os_name => :iOS, :os_version => "7.1.1", :platform => :iPhone },
+    "Clockson/1.0 (iPhone; iOS 8.0.2; Scale/2.00)" =>
+      { :type => :ApiClient, :name => :Clockson, :version => "1.0", :os_name => :iOS, :os_version => "8.0.2", :platform => :iPhone },
+    "Clockson/1.1 (iPhone; iOS 9.0; Scale/2.00),clockson/v1.0 (http://ninjaconcept.com/clockson)" =>
+      { :type => :ApiClient, :name => :Clockson, :version => "1.1", :os_name => :iOS, :os_version => "9.0", :platform => :iPhone },
+    "Clockson/1.1 (iPhone Simulator; iOS 8.1; Scale/2.00),clockson/v1.0 (http://ninjaconcept.com/clockson)" =>
+      { :type => :ApiClient, :name => :Clockson, :version => "1.1", :os_name => :iOS, :os_version => "8.1", :platform => :iPhone },
+    "clockson/v0.2 (https://github.com/basiszwo)" =>
+      { :type => :ApiClient, :name => :Clockson, :version => "0.2", :os_name => :iOS, :os_version => nil, :platform => :iPhone },
+    "clockson/v1.0 (http://ninjaconcept.com/clockson)" =>
+      { :type => :ApiClient, :name => :Clockson, :version => "1.0", :os_name => :iOS, :os_version => nil, :platform => :iPhone },
+
     # Misc.
     "OpenResearch-Dashboard" =>
       { :type => :ApiClient, :name => :"OpenResearch-Dashboard", :version => nil, :os_name => nil, :os_version => nil, :platform => nil},

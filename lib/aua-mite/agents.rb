@@ -4,5 +4,5 @@ end
 
 Aua::Agents.default << Aua::Agents::Fuerst << Aua::Agents::MiteGo <<
                        Aua::Agents::StandardMiteClient << Aua::Agents::AllMite <<
-                       Aua::Agents::Anytime << Aua::Agents::Eon << Aua::Agents::MightyMite << 
-                       Aua::Agents::Misc
+                       Aua::Agents::Anytime << Aua::Agents::Eon << Aua::Agents::MightyMite <<
+                       Aua::Agents::Misc << Aua::Agents::Clockson
