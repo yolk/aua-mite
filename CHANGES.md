@@ -3,6 +3,7 @@
 [full changelog](http://github.com/yolk/aua-mite/compare/v0.0.5...master)
 
 * Added Clockson detection
+* Anytime fixes
 
 ### 0.0.5 / 2012-03-29
 

@@ -62,6 +62,8 @@ describe "Mite Extension" do
       { :type => :ApiClient, :name => :"mite.go", :version => "1.1", :os_name => :iOS, :os_version => "4.2.1", :platform => :iPhone },
 
     # Anytime
+    "anytime/1.0 (iPhone; iOS 7.0.2; Scale/2.00)" =>
+      { :type => :ApiClient, :name => :Anytime, :version => "1.0", :os_name => :iOS, :os_version => "7.0.2", :platform => :iPhone },
     "Anytime 1.0 (iPhone Simulator; iPhone OS 4.2; en_US)" =>
       { :type => :ApiClient, :name => :Anytime, :version => "1.0", :os_name => :iOS, :os_version => "4.2", :platform => :iPhone },
     "Anytime 1.0 (iPhone; iPhone OS 4.2.1; de_DE)" =>
