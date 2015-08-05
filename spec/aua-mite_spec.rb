@@ -17,13 +17,13 @@ describe "Mite Extension" do
 
     # All.mite
     "All.mite-v1.4.0.0" =>
-      { :type => :ApiClient, :name => :"All.mite", :version => "1.4.0.0", :os_name => nil, :os_version => nil, :platform => nil },
+      { :type => :ApiClient, :name => :"All-mite", :version => "1.4.0.0", :os_name => nil, :os_version => nil, :platform => nil },
 
     # Standard mite clients
     "mite.php/v1.2" =>
-      { :type => :ApiClient, :name => :"mite.php", :version => "v1.2", :os_name => nil, :os_version => nil, :platform => nil },
+      { :type => :ApiClient, :name => :"mite-php", :version => "v1.2", :os_name => nil, :os_version => nil, :platform => nil },
     "mite.desk/1.2.14" =>
-      { :type => :ApiClient, :name => :"mite.desk", :version => "1.2.14", :os_name => nil, :os_version => nil, :platform => nil },
+      { :type => :ApiClient, :name => :"mite-desk", :version => "1.2.14", :os_name => nil, :os_version => nil, :platform => nil },
     "mite-rb/0.3.0" =>
       { :type => :ApiClient, :name => :"mite-rb", :version => "0.3.0", :os_name => nil, :os_version => nil, :platform => nil },
     "jmite/0.1" =>
@@ -43,31 +43,31 @@ describe "Mite Extension" do
     "git2mite/0.0.1" =>
       { :type => :ApiClient, :name => :git2mite, :version => "0.0.1", :os_name => nil, :os_version => nil, :platform => nil },
     "mite.air/0.93 (Windows Vista)" =>
-      { :type => :ApiClient, :name => :"mite.air", :version => "0.93", :os_name => :Windows, :os_version => "V", :platform => :Windows },
+      { :type => :ApiClient, :name => :"mite-air", :version => "0.93", :os_name => :Windows, :os_version => "V", :platform => :Windows },
     "mite.air/0.93 (Mac OS 10.5.8)" =>
-      { :type => :ApiClient, :name => :"mite.air", :version => "0.93", :os_name => nil, :os_version => nil, :platform => nil },
+      { :type => :ApiClient, :name => :"mite-air", :version => "0.93", :os_name => nil, :os_version => nil, :platform => nil },
     "mite.enterprise/0.1 (simple)" =>
-      { :type => :ApiClient, :name => :"mite.enterprise", :version => "0.1", :os_name => nil, :os_version => nil, :platform => nil },
+      { :type => :ApiClient, :name => :"mite-enterprise", :version => "0.1", :os_name => nil, :os_version => nil, :platform => nil },
     "mite.mobile/1.2 CFNetwork/485.12.7 Darwin/10.4.0" =>
-      { :type => :ApiClient, :name => :"mite.mobile", :version => "1.2", :os_name => :MacOSX, :os_version => "10.6.4", :platform => :Macintosh },
+      { :type => :ApiClient, :name => :"mite-mobile", :version => "1.2", :os_name => :MacOSX, :os_version => "10.6.4", :platform => :Macintosh },
     "mite.net - connector/1.2.1.0 (Microsoft Windows NT 6.1.7600.0)" =>
-      { :type => :ApiClient, :name => :"mite.net", :version => "1.2.1.0", :os_name => :Windows, :os_version => "NT 6.1.7600.0", :platform => :Windows },
+      { :type => :ApiClient, :name => :"mite-net", :version => "1.2.1.0", :os_name => :Windows, :os_version => "NT 6.1.7600.0", :platform => :Windows },
     "TimeLog/4.5.7 CFNetwork/454.11.5 Darwin/10.6.0 (i386) (MacBookPro6%2C1)" =>
       { :type => :ApiClient, :name => :TimeLog, :version => "4.5.7", :os_name => :MacOSX, :os_version => "10.6.6", :platform => :Macintosh },
 
     # mite.go
     "mite.go/1.0 CFNetwork/459 Darwin/10.0.0d3" =>
-      { :type => :ApiClient, :name => :"mite.go", :version => "1.0", :os_name => :iOS, :os_version => nil, :platform => :iPhone },
+      { :type => :ApiClient, :name => :MiteGo, :version => "1.0", :os_name => :iOS, :os_version => nil, :platform => :iPhone },
     "mite.go/1.1 (iPhone1,2; iPhone OS 4.2.1; de)" =>
-      { :type => :ApiClient, :name => :"mite.go", :version => "1.1", :os_name => :iOS, :os_version => "4.2.1", :platform => :iPhone },
+      { :type => :ApiClient, :name => :MiteGo, :version => "1.1", :os_name => :iOS, :os_version => "4.2.1", :platform => :iPhone },
     "MiteGo/2.0 (iPhone; iOS 9.0; Scale/3.00)" =>
-      { :type => :ApiClient, :name => :"mite.go", :version => "2.0", :os_name => :iOS, :os_version => "9.0", :platform => :iPhone },
+      { :type => :ApiClient, :name => :MiteGo, :version => "2.0", :os_name => :iOS, :os_version => "9.0", :platform => :iPhone },
     "MiteGo/2.0 (iPad; iOS 7.1.2; Scale/2.00)" =>
-      { :type => :ApiClient, :name => :"mite.go", :version => "2.0", :os_name => :iOS, :os_version => "7.1.2", :platform => :iPad },
+      { :type => :ApiClient, :name => :MiteGo, :version => "2.0", :os_name => :iOS, :os_version => "7.1.2", :platform => :iPad },
     "MiteGo/20141030 (iPhone; iOS 8.1.1; Scale/2.00)" =>
-      { :type => :ApiClient, :name => :"mite.go", :version => "20141030", :os_name => :iOS, :os_version => "8.1.1", :platform => :iPhone },
+      { :type => :ApiClient, :name => :MiteGo, :version => "20141030", :os_name => :iOS, :os_version => "8.1.1", :platform => :iPhone },
     "MiteGo/2.0-beta3 (iPhone Simulator; iOS 8.1; Scale/2.00)" =>
-      { :type => :ApiClient, :name => :"mite.go", :version => "2.0-beta3", :os_name => :iOS, :os_version => "8.1", :platform => :iPhone },
+      { :type => :ApiClient, :name => :MiteGo, :version => "2.0-beta3", :os_name => :iOS, :os_version => "8.1", :platform => :iPhone },
 
     # Anytime
     "anytime/1.0 (iPhone; iOS 7.0.2; Scale/2.00)" =>
@@ -236,7 +236,7 @@ describe "Mite Extension" do
     "mitetracking/v2.2.3" =>
       { :type => :ApiClient, :name => :"mitetracking", :version => "2.2.3", :os_name => nil, :os_version => nil, :platform => nil},
     "mite/v1.2.3" =>
-      { :type => :ApiClient, :name => :"mite", :version => "1.2.3", :os_name => nil, :os_version => nil, :platform => nil},
+      { :type => :ApiClient, :name => :mite, :version => "1.2.3", :os_name => nil, :os_version => nil, :platform => nil},
     "mitevaluator (user@email.com)" =>
       { :type => :ApiClient, :name => :"mitevaluator", :version => nil, :os_name => nil, :os_version => nil, :platform => nil},
     "MiteYourMite" =>

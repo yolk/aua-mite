@@ -14,12 +14,12 @@ module Aua::Agents::StandardMiteClient
   end
 
   def name
-    @name ||= app.to_sym
+    @name ||= app.gsub(/\./, "-").to_sym
   end
 
   def version
-    return super unless app == "mite.net"
-    versions[2]
+    return versions[2] if app == "mite.net"
+    super || version_of(app)
   end
 
 end

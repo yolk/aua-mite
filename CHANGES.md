@@ -1,6 +1,13 @@
 ### dev
 
-[full changelog](http://github.com/yolk/aua-mite/compare/v0.0.7...master)
+[full changelog](http://github.com/yolk/aua-mite/compare/v0.0.8...master)
+
+### 0.0.8 / 2015-08-05
+
+[full changelog](http://github.com/yolk/aua-mite/compare/v0.0.7...v0.0.8)
+
+* Fixed mite.* issues
+* Optimizations
 
 ### 0.0.7 / 2015-08-05
 

@@ -10,7 +10,7 @@ module Aua::Agents::MiteGo
   end
 
   def name
-    @name ||= :"mite.go"
+    @name ||= :MiteGo
   end
 
   def version

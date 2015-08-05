@@ -11,7 +11,7 @@ module Aua::Agents::AllMite
   end
 
   def name
-    @name ||= :"All.mite"
+    @name ||= :"All-mite"
   end
 
   def version

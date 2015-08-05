@@ -1,35 +1,11 @@
 module Aua::Agents::Misc
 
-  CLIENTS = {
-    "OpenResearch-Dashboard" => :"OpenResearch-Dashboard",
-    "Mitey" => :Mitey,
-    "my_app_name" => :my_app_name,
-    "mite_summary" => :mite_summary,
-    "Fire2mite" => :Fire2mite,
+  STD_CLIENTS = %w(OpenResearch-Dashboard Mitey my_app_name mite_summary Fire2mite ledger2mite Mite2Excel mite2mail mite2pdf MiteBoard MiteFM mitecommander mityvoice MiteYourMite mite mitevaluator mitetracking miteTestv1 mitesh mite+scopevisio miter miteNX mitemigrate mitematemarser MiteliciousToday Mitelicious)
+
+  CLIENTS = (STD_CLIENTS.reduce({}) {|clients, key| clients[key] = key.to_sym; clients }).merge({
     "jira-mite" => :jiramite,
-    "ledger2mite" => :ledger2mite,
-    "Mite2Excel" => :Mite2Excel,
-    "mite2mail" => :mite2mail,
-    "mite2pdf" => :mite2pdf,
-    "MiteBoard" => :MiteBoard,
-    "MiteFM" => :"MiteFM",
-    "mitecommander" => :"mitecommander",
-    "mityvoice" => :mityvoice,
-    "MiteYourMite" => :MiteYourMite,
-    "mite" => :mite,
-    "mitevaluator" => :mitevaluator,
-    "mitetracking" => :mitetracking,
-    "miteTestv1" => :"miteTestv1",
-    "mitesh" => :mitesh,
-    "mite+scopevisio" => :"mite+scopevisio",
-    "miter" => :miter,
-    "miteNX" => :"miteNX",
-    "mitemigrate" => :mitemigrate,
-    "mitematemarser" => :mitematemarser,
-    "MiteliciousToday" => :MiteliciousToday,
-    "Mitelicious" => :Mitelicious,
     "mite_invoice" => :"mite-invoice"
-  }
+  })
 
   GIT2MITE_PATTERN = /^git(lab)?2mitev([\d\.]+)/
   JIRAMITE_PATTERN = /^jira-mite-([\d\.]+)$/
@@ -44,9 +20,9 @@ module Aua::Agents::Misc
   end
 
   def name
+    return app.to_sym if app =~ MITE_STD_PATTERN
     return :git2mite if app =~ GIT2MITE_PATTERN
     return :jiramite if app =~ JIRAMITE_PATTERN
-    return app.to_sym if app =~ MITE_STD_PATTERN
     CLIENTS[app]
   end
 
