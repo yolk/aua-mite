@@ -60,6 +60,14 @@ describe "Mite Extension" do
       { :type => :ApiClient, :name => :"mite.go", :version => "1.0", :os_name => :iOS, :os_version => nil, :platform => :iPhone },
     "mite.go/1.1 (iPhone1,2; iPhone OS 4.2.1; de)" =>
       { :type => :ApiClient, :name => :"mite.go", :version => "1.1", :os_name => :iOS, :os_version => "4.2.1", :platform => :iPhone },
+    "MiteGo/2.0 (iPhone; iOS 9.0; Scale/3.00)" =>
+      { :type => :ApiClient, :name => :"mite.go", :version => "2.0", :os_name => :iOS, :os_version => "9.0", :platform => :iPhone },
+    "MiteGo/2.0 (iPad; iOS 7.1.2; Scale/2.00)" =>
+      { :type => :ApiClient, :name => :"mite.go", :version => "2.0", :os_name => :iOS, :os_version => "7.1.2", :platform => :iPad },
+    "MiteGo/20141030 (iPhone; iOS 8.1.1; Scale/2.00)" =>
+      { :type => :ApiClient, :name => :"mite.go", :version => "20141030", :os_name => :iOS, :os_version => "8.1.1", :platform => :iPhone },
+    "MiteGo/2.0-beta3 (iPhone Simulator; iOS 8.1; Scale/2.00)" =>
+      { :type => :ApiClient, :name => :"mite.go", :version => "2.0-beta3", :os_name => :iOS, :os_version => "8.1", :platform => :iPhone },
 
     # Anytime
     "anytime/1.0 (iPhone; iOS 7.0.2; Scale/2.00)" =>
@@ -99,7 +107,7 @@ describe "Mite Extension" do
     "Clockson/1.0 CFNetwork/672.0.8 Darwin/14.0.0" =>
       { :type => :ApiClient, :name => :Clockson, :version => "1.0", :os_name => :Darwin, :os_version => "14.0.0", :platform => :Darwin },
     "Clockson/1.0 (iPad; iOS 7.1.1; Scale/2.00)" =>
-      { :type => :ApiClient, :name => :Clockson, :version => "1.0", :os_name => :iOS, :os_version => "7.1.1", :platform => :iPhone },
+      { :type => :ApiClient, :name => :Clockson, :version => "1.0", :os_name => :iOS, :os_version => "7.1.1", :platform => :iPad },
     "Clockson/1.0 (iPhone; iOS 8.0.2; Scale/2.00)" =>
       { :type => :ApiClient, :name => :Clockson, :version => "1.0", :os_name => :iOS, :os_version => "8.0.2", :platform => :iPhone },
     "Clockson/1.1 (iPhone; iOS 9.0; Scale/2.00),clockson/v1.0 (http://ninjaconcept.com/clockson)" =>
@@ -124,6 +132,8 @@ describe "Mite Extension" do
       { :type => :ApiClient, :name => :MiteClocks, :version => "1.0", :os_name => :iOS, :os_version => "7.0.4", :platform => :iPhone },
     "MiteClocks/1.0 CFNetwork/672.0.8 Darwin/14.0.0" =>
       { :type => :ApiClient, :name => :MiteClocks, :version => "1.0", :os_name => :Darwin, :os_version => "14.0.0", :platform => :Darwin },
+    "MiteTimer/1.0 (iPhone Simulator; iOS 8.2; Scale/2.00)" =>
+      { :type => :ApiClient, :name => :MiteTimer, :version => "1.0", :os_name => :iOS, :os_version => "8.2", :platform => :iPhone },
 
     # Misc.
     "OpenResearch-Dashboard" =>
@@ -164,6 +174,75 @@ describe "Mite Extension" do
       { :type => :ApiClient, :name => :"mite-cli", :version => nil, :os_name => nil, :os_version => nil, :platform => nil},
     "MiteBoard 1.0 rv:1 (Macintosh; Mac OS X 10.6.7; de_DE)" =>
       { :type => :ApiClient, :name => :MiteBoard, :version => nil, :os_name => nil, :os_version => nil, :platform => nil},
+    "mitecommander/0.1.0 njh@njh.io" =>
+      { :type => :ApiClient, :name => :mitecommander, :version => "0.1.0", :os_name => nil, :os_version => nil, :platform => nil},
+    "mite-compiler/v1.0 (mario.colombo@webrepublic.ch)" =>
+      { :type => :ApiClient, :name => :"mite-compiler", :version => "v1.0", :os_name => nil, :os_version => nil, :platform => nil},
+    "mite-exporter/v1.0" =>
+      { :type => :ApiClient, :name => :"mite-exporter", :version => "v1.0", :os_name => nil, :os_version => nil, :platform => nil},
+    "mite-export/v1.0" =>
+      { :type => :ApiClient, :name => :"mite-export", :version => "v1.0", :os_name => nil, :os_version => nil, :platform => nil},
+    "mite-faxport <0.0.1>" =>
+      { :type => :ApiClient, :name => :"mite-faxport", :version => nil, :os_name => nil, :os_version => nil, :platform => nil},
+    "MiteFM/v0.9 (nils.waldherr@filemakergarage.com)" =>
+      { :type => :ApiClient, :name => :"MiteFM", :version => "v0.9", :os_name => nil, :os_version => nil, :platform => nil},
+    "mite-import (stephan.poetschner@slice-dice.de)" =>
+      { :type => :ApiClient, :name => :"mite-import", :version => nil, :os_name => nil, :os_version => nil, :platform => nil},
+    "mite-info/v1.0.0 (mail@sebbo.net)" =>
+      { :type => :ApiClient, :name => :"mite-info", :version => "v1.0.0", :os_name => nil, :os_version => nil, :platform => nil},
+    "mite_invoice/0.0.1" =>
+      { :type => :ApiClient, :name => :"mite-invoice", :version => "0.0.1", :os_name => nil, :os_version => nil, :platform => nil},
+    "mite-invoice/0.1.0" =>
+      { :type => :ApiClient, :name => :"mite-invoice", :version => "0.1.0", :os_name => nil, :os_version => nil, :platform => nil},
+    "Mitelicious/com.kreait.Mitelicious (1; OS Version 8.1.3 (Build 12B466))" =>
+      { :type => :ApiClient, :name => :"Mitelicious", :version => nil, :os_name => nil, :os_version => nil, :platform => nil},
+    "MiteliciousToday/com.kreait.Mitelicious.MiteliciousToday (1; OS Version 8.2 (Build 12D508))" =>
+      { :type => :ApiClient, :name => :"MiteliciousToday", :version => nil, :os_name => nil, :os_version => nil, :platform => nil},
+    "mitematemarser/0.2.1 (njh@njh.io)" =>
+      { :type => :ApiClient, :name => :"mitematemarser", :version => "0.2.1", :os_name => nil, :os_version => nil, :platform => nil},
+    "mitemigrate/0.0.1" =>
+      { :type => :ApiClient, :name => :"mitemigrate", :version => "0.0.1", :os_name => nil, :os_version => nil, :platform => nil},
+    "mite-ngn/v1.0 (marcus@padovani.de)" =>
+      { :type => :ApiClient, :name => :"mite-ngn", :version => "v1.0", :os_name => nil, :os_version => nil, :platform => nil},
+    "miteNX" =>
+      { :type => :ApiClient, :name => :miteNX, :version => nil, :os_name => nil, :os_version => nil, :platform => nil},
+    "Mite-Parser/v0.1.0" =>
+      { :type => :ApiClient, :name => :"Mite-Parser", :version => "v0.1.0", :os_name => nil, :os_version => nil, :platform => nil},
+    "mite-php/v1.0" =>
+      { :type => :ApiClient, :name => :"mite-php", :version => "v1.0", :os_name => nil, :os_version => nil, :platform => nil},
+    "mite-projects/v0.0.1" =>
+      { :type => :ApiClient, :name => :"mite-projects", :version => "v0.0.1", :os_name => nil, :os_version => nil, :platform => nil},
+    "mite-py" =>
+      { :type => :ApiClient, :name => :"mite-py", :version => nil, :os_name => nil, :os_version => nil, :platform => nil},
+    "miter" =>
+      { :type => :ApiClient, :name => :"miter", :version => nil, :os_name => nil, :os_version => nil, :platform => nil},
+    "mite-reader/0.1;mite-rb/0.5.1" =>
+      { :type => :ApiClient, :name => :"mite-reader", :version => "0.1", :os_name => nil, :os_version => nil, :platform => nil},
+    "mite-rest-test" =>
+      { :type => :ApiClient, :name => :"mite-rest-test", :version => nil, :os_name => nil, :os_version => nil, :platform => nil},
+    "mite-salary/v1.0 (mail@sebbo.net)" =>
+      { :type => :ApiClient, :name => :"mite-salary", :version => "v1.0", :os_name => nil, :os_version => nil, :platform => nil},
+    "mite+scopevisio/0.1;mite-rb/0.5.3" =>
+      { :type => :ApiClient, :name => :"mite+scopevisio", :version => "0.1", :os_name => nil, :os_version => nil, :platform => nil},
+    "mite+scopevisio/0.1;mite+scopevisio/0.1;mite+scopevisio/0.1;mite+scopevisio/0.1;mite+scopevisio/0.1;mite+scopevisio/0.1;mite+scopevisio/0.1;mite+scopevisio/0.1;mite+scopevisio/0.1;mite+scopevisio/0.1;mite+scopevisio/0.1;mite+scopevisio/0.1;mite+scopevisio/0.1;mite+scopevisio/0.1;mite+scopevisio/0.1;mite+scopevisio/0.1;mite+scopevisio/0.1;mite+scopevisio/0.1;mite+scopevisio/0.1;mite+scopevisio/0.1;mite-rb/0.5.3" =>
+      { :type => :ApiClient, :name => :"mite+scopevisio", :version => "0.1", :os_name => nil, :os_version => nil, :platform => nil},
+    "mitesh/v0.0 (http://martinpallmann.de)" =>
+      { :type => :ApiClient, :name => :"mitesh", :version => "v0.0", :os_name => nil, :os_version => nil, :platform => nil},
+
+    "mite-test/v1.2.3" =>
+      { :type => :ApiClient, :name => :"mite-test", :version => "v1.2.3", :os_name => nil, :os_version => nil, :platform => nil},
+    "miteTestv1/v1.2.3" =>
+      { :type => :ApiClient, :name => :"miteTestv1", :version => "v1.2.3", :os_name => nil, :os_version => nil, :platform => nil},
+    "mitetracking/v2.2.3" =>
+      { :type => :ApiClient, :name => :"mitetracking", :version => "v2.2.3", :os_name => nil, :os_version => nil, :platform => nil},
+    "mite/v1.2.3" =>
+      { :type => :ApiClient, :name => :"mite", :version => "v1.2.3", :os_name => nil, :os_version => nil, :platform => nil},
+    "mitevaluator (info@datenpark.ch)" =>
+      { :type => :ApiClient, :name => :"mitevaluator", :version => nil, :os_name => nil, :os_version => nil, :platform => nil},
+    "MiteYourMite" =>
+      { :type => :ApiClient, :name => :"MiteYourMite", :version => nil, :os_name => nil, :os_version => nil, :platform => nil},
+    "mityvoice/v1.2.5" =>
+      { :type => :ApiClient, :name => :"mityvoice", :version => "v1.2.5", :os_name => nil, :os_version => nil, :platform => nil},
   }
 
   EXAMPLES_MITE.each do |string, values|

@@ -3,7 +3,8 @@ module Aua::Agents::MiscMobiles
   def self.extend?(agent)
     BYTEPOETS.include?(agent.app) ||
     agent.app == "MightyMiteToday" ||
-    agent.app == "MiteClocks"
+    agent.app == "MiteClocks" ||
+    agent.app == "MiteTimer"
   end
 
   BYTEPOETS = ["BytepoetsMite", "com.bytepoets.mightymite", "com.bytepoets.MightyMite"]
@@ -22,7 +23,15 @@ module Aua::Agents::MiscMobiles
   end
 
   def platform
-    :iPhone
+    @platform ||= begin
+      if app_comments.first =~ /^iPod/
+        :iPod
+      elsif app_comments.first =~ /^iPad/
+        :iPad
+      else
+        :iPhone
+      end
+    end
   end
 
   def os_version

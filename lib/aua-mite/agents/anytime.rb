@@ -17,7 +17,15 @@ module Aua::Agents::Anytime
   end
 
   def platform
-    @platform ||= app_comments.first =~ /^iPod/ ? :iPod : :iPhone
+    @platform ||= begin
+      if app_comments.first =~ /^iPod/
+        :iPod
+      elsif app_comments.first =~ /^iPad/
+        :iPad
+      else
+        :iPhone
+      end
+    end
   end
 
   def os_version

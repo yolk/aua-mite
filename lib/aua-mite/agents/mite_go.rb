@@ -1,7 +1,7 @@
 module Aua::Agents::MiteGo
 
   def self.extend?(agent)
-    agent.app == "mite.go" &&
+    (agent.app == "mite.go" || agent.app == "MiteGo") &&
     ((agent.products.index("Darwin") && agent.products[agent.products.index("Darwin")] = "NoDarwin") || true)
   end
 
@@ -13,10 +13,16 @@ module Aua::Agents::MiteGo
     @name ||= :"mite.go"
   end
 
+  def version
+    super || version_of(app)
+  end
+
   def platform
     @platform ||= begin
       if app_comments.first =~ /^iPod/
         :iPod
+      elsif app_comments.first =~ /^iPad/
+        :iPad
       else
         :iPhone
       end
@@ -25,8 +31,8 @@ module Aua::Agents::MiteGo
 
   def os_version
     @os_version ||= begin
-      if app_comments[1] =~ /iPhone OS ([\d\.]+)/
-        $1
+      if app_comments[1] =~ /(iPhone OS|iOS) ([\d\.]+)/
+        $2
       end
     end
   end
