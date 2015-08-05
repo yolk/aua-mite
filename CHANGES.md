@@ -4,6 +4,8 @@
 
 * Added Clockson detection
 * Anytime fixes
+* Misc mobile mite clients
+* Misc mite clients
 
 ### 0.0.5 / 2012-03-29
 

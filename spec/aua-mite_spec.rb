@@ -88,6 +88,8 @@ describe "Mite Extension" do
     # MightyMite
     "MightyMite 2.3.2 (Macintosh; Mac OS X 10.8.4; de_AT)" =>
       { :type => :ApiClient, :name => :MightyMite, :version => "2.3.2", :os_name => nil, :os_version => nil, :platform => nil},
+    "mighty-mite/0.1 CFNetwork/672.0.2 Darwin/12.5.0" =>
+      { :type => :ApiClient, :name => :MightyMite, :version => "0.1", :os_name => :MacOSX, :os_version => "10.8.5", :platform => :Macintosh},
 
     # Clockson
     "Clockson/1.01 (iPhone; iOS 7.1.1; Scale/2.00)" =>
@@ -109,6 +111,20 @@ describe "Mite Extension" do
     "clockson/v1.0 (http://ninjaconcept.com/clockson)" =>
       { :type => :ApiClient, :name => :Clockson, :version => "1.0", :os_name => :iOS, :os_version => nil, :platform => :iPhone },
 
+    # Misc Mobiles
+     "BytepoetsMite 1.0 (iPhone; iPhone OS 6.0; de_AT)" =>
+      { :type => :ApiClient, :name => :BytepoetsMite, :version => "1.0", :os_name => :iOS, :os_version => "6.0", :platform => :iPhone },
+    "com.bytepoets.mightymite/1.0 (unknown, iPhone OS 6.0.2, iPhone, Scale/2.000000)" =>
+      { :type => :ApiClient, :name => :BytepoetsMite, :version => "1.0", :os_name => :iOS, :os_version => "6.0.2", :platform => :iPhone },
+    "com.bytepoets.MightyMite/2.3.2 (unknown)" =>
+      { :type => :ApiClient, :name => :BytepoetsMite, :version => "2.3.2", :os_name => :iOS, :os_version => nil, :platform => :iPhone },
+    "MightyMiteToday/1 (iPhone; iOS 8.1.1; Scale/2.00)" =>
+      { :type => :ApiClient, :name => :MightyMiteToday, :version => "1", :os_name => :iOS, :os_version => "8.1.1", :platform => :iPhone },
+    "MiteClocks/1.0 (iPhone; iOS 7.0.4; Scale/2.00)" =>
+      { :type => :ApiClient, :name => :MiteClocks, :version => "1.0", :os_name => :iOS, :os_version => "7.0.4", :platform => :iPhone },
+    "MiteClocks/1.0 CFNetwork/672.0.8 Darwin/14.0.0" =>
+      { :type => :ApiClient, :name => :MiteClocks, :version => "1.0", :os_name => :Darwin, :os_version => "14.0.0", :platform => :Darwin },
+
     # Misc.
     "OpenResearch-Dashboard" =>
       { :type => :ApiClient, :name => :"OpenResearch-Dashboard", :version => nil, :os_name => nil, :os_version => nil, :platform => nil},
@@ -118,6 +134,36 @@ describe "Mite Extension" do
       { :type => :ApiClient, :name => :my_app_name, :version => nil, :os_name => nil, :os_version => nil, :platform => nil},
     "mite_summary" =>
       { :type => :ApiClient, :name => :mite_summary, :version => nil, :os_name => nil, :os_version => nil, :platform => nil},
+    "Fire2mite/v0.9 (nils.waldherr@filemakergarage.com)" =>
+      { :type => :ApiClient, :name => :Fire2mite, :version => "v0.9", :os_name => nil, :os_version => nil, :platform => nil},
+    "git2mitev0.1.0(Ondrej Brinkel <info@anzui.de>)" =>
+      { :type => :ApiClient, :name => :git2mite, :version => "0.1.0", :os_name => nil, :os_version => nil, :platform => nil},
+    "gitlab2mitev0.0.1(Ondrej Brinkel <info@anzui.de>)" =>
+      { :type => :ApiClient, :name => :git2mite, :version => "0.0.1", :os_name => nil, :os_version => nil, :platform => nil},
+    "gitlab2mitev0.0.4(Ondrej Brinkel <info@anzui.de>)" =>
+      { :type => :ApiClient, :name => :git2mite, :version => "0.0.4", :os_name => nil, :os_version => nil, :platform => nil},
+    "jira-mite-0.1 (werding.parkside@gmail.com)" =>
+      { :type => :ApiClient, :name => :jiramite, :version => "0.1", :os_name => nil, :os_version => nil, :platform => nil},
+    "jira-mite" =>
+      { :type => :ApiClient, :name => :jiramite, :version => nil, :os_name => nil, :os_version => nil, :platform => nil},
+    "ledger2mite/v0.1" =>
+      { :type => :ApiClient, :name => :ledger2mite, :version => "v0.1", :os_name => nil, :os_version => nil, :platform => nil},
+    "Mite2Excel" =>
+      { :type => :ApiClient, :name => :Mite2Excel, :version => nil, :os_name => nil, :os_version => nil, :platform => nil},
+    "mite2mail" =>
+      { :type => :ApiClient, :name => :mite2mail, :version => nil, :os_name => nil, :os_version => nil, :platform => nil},
+    "mite2pdf" =>
+      { :type => :ApiClient, :name => :mite2pdf, :version => nil, :os_name => nil, :os_version => nil, :platform => nil},
+    "mite-backup/v1.0 (https://github.com/yolk)" =>
+      { :type => :ApiClient, :name => :"mite-backup", :version => "v1.0", :os_name => nil, :os_version => nil, :platform => nil},
+    "mite-backup/0.1.1" =>
+      { :type => :ApiClient, :name => :"mite-backup", :version => "0.1.1", :os_name => nil, :os_version => nil, :platform => nil},
+    "mite-AlfredApp integration/v0.0.1 (http://mjays.net)" =>
+      { :type => :ApiClient, :name => :"mite-AlfredApp", :version => nil, :os_name => nil, :os_version => nil, :platform => nil},
+    "mite-cli" =>
+      { :type => :ApiClient, :name => :"mite-cli", :version => nil, :os_name => nil, :os_version => nil, :platform => nil},
+    "MiteBoard 1.0 rv:1 (Macintosh; Mac OS X 10.6.7; de_DE)" =>
+      { :type => :ApiClient, :name => :MiteBoard, :version => nil, :os_name => nil, :os_version => nil, :platform => nil},
   }
 
   EXAMPLES_MITE.each do |string, values|
