@@ -54,6 +54,6 @@ module Aua::Agents::Misc
     return $2 if app =~ GIT2MITE_PATTERN
     return $1 if app =~ JIRAMITE_PATTERN
     v = (super || version_of(app) || "").split(";", 2)[0]
-    v =~ /^com\./ ? nil : v
+    v =~ /^com\./ ? nil : (v ? v.sub(/^v/, "") : v)
   end
 end
